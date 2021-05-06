@@ -1,0 +1,35 @@
+.stemmerPorterMain{
+    display: grid;
+    color: blue;
+}
+
+.stemmerPorterMain textarea{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid rgb(22, 2, 2) 3px;
+    width: 30vw;
+    height: 15vh;
+    resize: none;
+}
+
+.stemmerPorterMain button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}
+.stemmerPorterMain button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer; 
+}
+.stemmerPorterMain ul{
+text-decoration: none;
+list-style-type: none;
+}

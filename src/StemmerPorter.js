@@ -1,5 +1,7 @@
 import React, {Component} from "react";
+import "./StemmerPorter.css";
 import {stemmer} from "./stemmerPorterEngine";
+
 
 class StemmerPorter extends Component{
 
@@ -50,12 +52,16 @@ class StemmerPorter extends Component{
             <div className="stemmerPorterMain">
                 <div className="header">
                     <form onSubmit={this.stem}>
-                        <textarea ref={(a) => this._inputElement = a} placeholder="Введите текст для стемминга"></textarea>
-                        <button type="submit">Ввод</button>
-                    </form>
+                        <ul>
+                            <li><textarea ref={(a) => this._inputElement = a} placeholder="Введите текст для стемминга"></textarea></li>
+                            <li> <button type="submit">Ввод</button></li>
+                        </ul>
+                   </form>
                 </div>
-                <label>Основа - количество в тексте</label>
-                <textarea ref={(a) => this._outputElement = a} readOnly></textarea>
+                <ul>
+                    <li><label>Основа - количество в тексте</label></li>
+                    <li><textarea ref={(a) => this._outputElement = a} readOnly></textarea></li>
+                </ul>              
             </div>
         );
     }
