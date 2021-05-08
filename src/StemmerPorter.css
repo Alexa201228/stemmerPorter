@@ -1,6 +1,5 @@
 .stemmerPorterMain{
     display: grid;
-    color: blue;
 }
 
 .stemmerPorterMain textarea{
@@ -23,6 +22,7 @@
     background-color: #0066FF;
     color: #FFF;
     border: 2px solid #0066FF;
+    border-radius: 5px;
 }
 .stemmerPorterMain button:hover {
     background-color: #003399;

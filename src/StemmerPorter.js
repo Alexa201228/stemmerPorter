@@ -13,6 +13,7 @@ class StemmerPorter extends Component{
         }
 
         this.stem = this.stem.bind(this);
+        this.printResults = this.printResults.bind(this);
     }
 
     stem(word){
@@ -35,7 +36,11 @@ class StemmerPorter extends Component{
         this.setState({
             words:dict
         });
-
+        this.printResults(dict, word);
+        
+    }
+    printResults(dict, word){
+        this._outputElement.value = "";
         for(var key in dict){
             this._outputElement.value += key + " - " + dict[key] + "\n";
         }
@@ -46,7 +51,6 @@ class StemmerPorter extends Component{
 
         word.preventDefault();
     }
-
     render(){
         return(
             <div className="stemmerPorterMain">

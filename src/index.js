@@ -8,6 +8,7 @@ var destination = document.querySelector("#container");
 
 ReactDOM.render(
     <div>
+        <h1>Стеммер Портера</h1>
         <StemmerPorter/>
     </div>,
     destination
